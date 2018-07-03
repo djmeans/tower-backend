@@ -1,5 +1,5 @@
 const app = require('./app')
-var port = process.env.PORT || 3000
+var port = 'https://sommstudy.herokuapp.com/'|| 3000
 
 app.listen(port)
   .on('error', console.error.bind(console))
