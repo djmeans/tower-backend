@@ -5,12 +5,13 @@ const app = express();
 var varietals = require('./routes/varietals');
 var regions = require('./routes/regions');
 
+
+app.use(bodyParser.json());
+app.use(cors())
+
 app.get('/', function(req, res, next){
     res.sendStatus(200);
 });
-
-app.use(cors())
-app.use(bodyParser.json());
 
 
 app.use(function (req, res, next) {
@@ -22,6 +23,7 @@ app.use(function (req, res, next) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.use('/', )
 app.use('/varietals', varietals);
 app.use('/regions', regions);
 
