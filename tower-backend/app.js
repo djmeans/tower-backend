@@ -5,6 +5,7 @@ const app = express();
 var varietals = require('./routes/varietals');
 var regions = require('./routes/regions');
 
+app.get('/', (req, res) => res.send('Hello World!'))
 
 app.use(cors())
 app.use(bodyParser.json());
@@ -19,7 +20,6 @@ app.use(function (req, res, next) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/', index);
 app.use('/varietals', varietals);
 app.use('/regions', regions);
 
