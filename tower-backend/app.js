@@ -5,7 +5,9 @@ const app = express();
 var varietals = require('./routes/varietals');
 var regions = require('./routes/regions');
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', function(req, res, next){
+    res.sendStatus(200);
+});
 
 app.use(cors())
 app.use(bodyParser.json());
