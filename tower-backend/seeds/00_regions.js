@@ -233,7 +233,7 @@ exports.seed = function(knex, Promise) {
               {
                   id: 26,
                   varietal:"cabernet sauvignon",
-                  country:"austrailia",
+                  country:"australia",
                   region:"south-australia",
                   appelation: null,
                   lat: -35.118233, 
@@ -251,7 +251,7 @@ exports.seed = function(knex, Promise) {
               {
                   id: 28,
                   varietal:"cabernet sauvignon",
-                  country:"austrailia",
+                  country:"australia",
                   region:"western-australia",
                   appelation: null,
                   lat: -33.955334, 
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
               {
                   id: 29,
                   varietal:"cabernet sauvignon",
-                  country:"austrailia",
+                  country:"australia",
                   region:"south australia",
                   appelation: null,
                   lat: -33.036233, 
@@ -323,7 +323,7 @@ exports.seed = function(knex, Promise) {
               {
                   id: 36,
                   varietal:"syrah",
-                  country:"austrailia",
+                  country:"australia",
                   region:"south australia",
                   appelation: null,
                   lat:-37.290234, 
@@ -332,7 +332,7 @@ exports.seed = function(knex, Promise) {
               {
                   id: 37,
                   varietal:"syrah",
-                  country:"austrailia",
+                  country:"australia",
                   region:"western australia",
                   appelation: null,
                   lat: -33.955334, 
@@ -341,7 +341,7 @@ exports.seed = function(knex, Promise) {
               {
                   id: 38,
                   varietal:"syrah",
-                  country:"austrailia",
+                  country:"australia",
                   region:"victoria",
                   appelation: null,
                   lat: -36.902823, 

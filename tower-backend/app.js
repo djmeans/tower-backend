@@ -8,8 +8,8 @@ var logger = require("morgan")
 
 
 app.use(bodyParser.json());
-app.use(logger('dev'))
-app.use(cors())
+app.use(logger('dev'));
+app.use(cors());
 
 app.get('/', function(req, res, next){
     res.sendStatus(200);
