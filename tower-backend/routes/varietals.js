@@ -6,6 +6,6 @@ router.get(('/'), (req, res) => {
     queries.getAllVarietals().then(varietals => res.json({ varietals }))
 })
 router.get(('/:varietal'), (req, res) => {
-    queries.getVarietalByVarietal().then(varietal => res.json({ varietal }))
+    queries.getVarietalByVarietal(req.params.varietal).then(varietal => res.json({ varietal }))
 })
 module.exports = router;
