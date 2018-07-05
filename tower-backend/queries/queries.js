@@ -11,6 +11,9 @@ module.exports = {
   getAllVarietals: function () {
     return knex('varietals').returning('*')
   },
+  getVarietalByVarietal: function(varietal){
+    return knex('varietals').select().where('varietal', varietal).returning('*')
+  },
   getAllRegions: function () {
     return knex('regions').returning('*')
   },
