@@ -205,10 +205,10 @@ exports.seed = function(knex, Promise) {
               },
               {
                   id: 23,
-                  varietal:"viognier",
-                  country:"france",
-                  region:"rhone valley",
-                  appelation: "condrieu",
+                  varietal:"Viognier",
+                  country:"France",
+                  region:"Rhone Valley",
+                  appelation: "Condrieu",
                   lat: 45.476261, 
                   long: 4.754006
               },
