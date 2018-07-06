@@ -8,4 +8,21 @@ router.get(('/'), (req, res) => {
 router.get(('/:varietal'), (req, res) => {
     queries.getVarietalByVarietal(req.params.varietal).then(varietal => res.json({ varietal }))
 })
+router.post("/", (request, response, next) => {
+    queries.create(request.body).then(varietal => {
+        response.status(201).json({varietal: varietal});
+    }).catch(next);
+});
+
+router.delete("/:varietal", (request, response, next) => {
+    queries.delete(request.params.id).then(() => {
+        response.status(204).json({deleted: true});
+    }).catch(next);
+});
+
+router.put("/:varietal", (request, response, next) => {
+    queries.update(request.params.id, request.body).then(varietal => {
+        response.json({varietal: varietal[0]});
+    }).catch(next);
+});
 module.exports = router;

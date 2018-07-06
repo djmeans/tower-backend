@@ -17,18 +17,21 @@ module.exports = {
   getAllRegions: function () {
     return knex('regions').returning('*')
   },
-
-  create(body) {
-    return (
-        knex('varietals').insert(body)
-    )
+  create(varietal){
+    return database("varietals")
+    .insert(varietal)
+    .returning('*')
+    .then(record => record[0]);
   },
-  updateBallot(req) {
-    return knex('myballot').where('id', req.userId).update(req.body).returning('*')
+  update(id, varietal){
+    return database("varietals")
+          .update(varietal)
+          .where("id", id)
+          .returning("*")
+          .then(record => record[0]);
   },
-
-  delete(id) {
-    return knex('varietals').where('id', id).del()
+  delete(id){
+    return database("varietals").delete().where("id", id);
   }
 
 };
