@@ -21,7 +21,7 @@ router.delete("/:varietal", (request, response, next) => {
 });
 
 router.put("/:varietal", (request, response, next) => {
-    queries.update(request.params.id, request.body).then(varietal => {
+    queries.update(request.params.varietal, request.body).then(varietal => {
         response.json({varietal: varietal[0]});
     }).catch(next);
 });

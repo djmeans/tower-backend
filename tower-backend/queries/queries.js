@@ -23,10 +23,10 @@ module.exports = {
     .returning('*')
     .then(record => record[0]);
   },
-  update(id, varietal){
+  update(varietal, body){
     return knex("varietals")
-          .update(varietal)
-          .where("id", id)
+          .update(body)
+          .where("varietal", varietal)
           .returning("*")
           .then(record => record[0]);
   },
