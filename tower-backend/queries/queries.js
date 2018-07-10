@@ -18,13 +18,13 @@ module.exports = {
     return knex('regions').returning('*')
   },
   create(varietal){
-    return database("varietals")
+    return knex("varietals")
     .insert(varietal)
     .returning('*')
     .then(record => record[0]);
   },
   update(id, varietal){
-    return database("varietals")
+    return knex("varietals")
           .update(varietal)
           .where("id", id)
           .returning("*")

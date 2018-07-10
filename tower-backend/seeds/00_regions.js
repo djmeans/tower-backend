@@ -19,7 +19,7 @@ exports.seed = function(knex, Promise) {
                   varietal:"Chardonnay",
                   country: "France",
                   region:"Burgundy",
-                  appelation:"Chablis cote-d'or Maconnais",
+                  appelation:"Chablis Cote-d'or Maconnais",
                   lat: 46.855222, 
                   long: 4.790561
               },
