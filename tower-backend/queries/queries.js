@@ -31,7 +31,7 @@ module.exports = {
           .then(record => record[0]);
   },
   delete(id){
-    return database("varietals").delete().where("id", id);
+    return knex("varietals").delete().where("id", id);
   }
 
 };
