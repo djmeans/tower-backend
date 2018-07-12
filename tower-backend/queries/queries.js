@@ -5,8 +5,8 @@ module.exports = {
   getRegionById: function (id) {
     return knex('regions').where('id', id).returning('*')
   },
-  getRegionByCountry: function (email) {
-    return knex('regions').select().where('region', region).returning('*')
+  getRegionByCountry: function (country) {
+    return knex('regions').select().where('country', country).returning('*')
   },
   getAllVarietals: function () {
     return knex('varietals').returning('*')
@@ -30,8 +30,8 @@ module.exports = {
           .returning("*")
           .then(record => record[0]);
   },
-  delete(varietal){
-    return knex("varietals").delete().where("varietal", varietal);
+  delete(id){
+    return knex("regions").delete().where("id", id);
   }
 
 };

@@ -7,7 +7,6 @@ return knex('regions').del()
     return knex('regions').insert([
             {
                 id: 1,
-                varietalId: 1,
                 varietal:"Albarino",
                 country:"Spain",
                 region:"Rias Baixas",
@@ -17,7 +16,6 @@ return knex('regions').del()
             },
             {
                 id: 2,
-                varietalId: 2,
                 varietal:"Chardonnay",
                 country: "France",
                 region:"Burgundy",
@@ -26,8 +24,7 @@ return knex('regions').del()
                 long: 4.790561
             },
             {
-                id: 3,
-                varietalId: 3, 
+                id: 3, 
                 varietal: "Chardonnay",
                 country: "United States",
                 region: "California",
@@ -37,7 +34,6 @@ return knex('regions').del()
             },
             {
                 id: 4,
-                varietalId: 4,
                 varietal:"Chenin Blanc",
                 country:"France",
                 region:"Vouvray",
@@ -47,7 +43,6 @@ return knex('regions').del()
             },
             {
                 id: 5,
-                varietalId: 5,
                 varietal:"Chenin Blanc",
                 country:"France",
                 region:"Savennieres",
@@ -57,7 +52,6 @@ return knex('regions').del()
             },
             {
                 id: 6,
-                varietalId: 6,
                 varietal:"Chenin Blanc",
                 country:"France",
                 region:"Loire Valley",
@@ -67,7 +61,6 @@ return knex('regions').del()
             },
             {
                 id: 7,
-                varietalId: 7,
                 varietal:"Pinot Gris",
                 country:"Italy",
                 region:"Trento-Alto Adige",
@@ -76,8 +69,7 @@ return knex('regions').del()
                 long: 11.290399
             },
             {
-                id: 8,
-                varietalId: 8, 
+                id: 8, 
                 varietal:"Pinot Gris",
                 country:"Italy",
                 region:"Friuli",
@@ -87,7 +79,6 @@ return knex('regions').del()
             },
             {
                 id: 9,
-                varietalId: 9,
                 varietal:"Pinot Gris",
                 country:"France",
                 region:"Alsace",
@@ -97,7 +88,6 @@ return knex('regions').del()
             },
             {
                 id: 10,
-                varietalId: 10,
                 varietal:"Gerwurztraminer",
                 country:"France",
                 region:"Alsace",
@@ -107,7 +97,6 @@ return knex('regions').del()
             },
             {
                 id: 11,
-                varietalId: 11,
                 varietal:"Reisling",
                 country:"Australia",
                 region:"South Australia",
@@ -117,7 +106,6 @@ return knex('regions').del()
             },           
             {
                 id: 12,
-                varietalId: 12,
                 varietal:"Reisling",
                 country:"France",
                 region:"Alsace",
@@ -127,7 +115,6 @@ return knex('regions').del()
             },
             {
                 id: 13,
-                varietalId: 13,
                 varietal:"Reisling",
                 country:"Germany",
                 region:"Rhein",
@@ -137,7 +124,6 @@ return knex('regions').del()
             },
             {
                 id: 14,
-                varietalId: 14,
                 varietal:"Reisling",
                 country:"Germany",
                 region:"Mosel",
@@ -147,7 +133,6 @@ return knex('regions').del()
             },
             {
                 id: 15,
-                varietalId: 15,
                 varietal:"Sauvignon Blanc",
                 country:"New Zealand",
                 region:"South Island",
@@ -157,7 +142,6 @@ return knex('regions').del()
             },
             {
                 id: 16,
-                varietalId: 16,
                 varietal:"Sauvignon Blanc",
                 country:"United States",
                 region:"California",
@@ -167,7 +151,6 @@ return knex('regions').del()
             },
             {
                 id: 17,
-                varietalId: 17,
                 varietal:"Sauvignon Blanc",
                 country:"France",
                 region:"Graves",
@@ -177,7 +160,6 @@ return knex('regions').del()
             },
             {
                 id: 18,
-                varietalId: 18,
                 varietal:"Sauvignon Blanc",
                 country:"France",
                 region:"Pessac-Leognan",
@@ -187,7 +169,6 @@ return knex('regions').del()
             },
             {
                 id: 19,
-                varietalId: 19,
                 varietal:"Sauvignon Blanc",
                 country:"France",
                 region:"Bordeaux",
@@ -197,7 +178,6 @@ return knex('regions').del()
             },
             {
                 id: 20,
-                varietalId: 20,
                 varietal:"Sauvignon Blanc",
                 country:"France",
                 region:"Loire Valley",
@@ -207,7 +187,6 @@ return knex('regions').del()
             },
             {
                 id: 21,
-                varietalId: 21,
                 varietal:"Torrontes",
                 country:"Argentina",
                 region:"Mendoza",
@@ -217,7 +196,6 @@ return knex('regions').del()
             },
             {
                 id: 22,
-                varietalId: 22,
                 varietal:"Torrontes",
                 country:"Argentina",
                 region:"Salta Catamarca",
@@ -227,7 +205,6 @@ return knex('regions').del()
             },
             {
                 id: 23,
-                varietalId: 23,
                 varietal:"Viognier",
                 country:"France",
                 region:"Rhone Valley",
@@ -237,7 +214,6 @@ return knex('regions').del()
             },
             {
                 id: 24,
-                varietalId: 24,
                 varietal:"Gamay",
                 country:"France",
                 region:"Burgundy",
@@ -247,7 +223,6 @@ return knex('regions').del()
             },
             {
                 id: 25,
-                varietalId: 25,
                 varietal:"Cabernet Sauvignon",
                 country:"United States",
                 region:"California",
@@ -257,7 +232,6 @@ return knex('regions').del()
             },
             {
                 id: 26,
-                varietalId: 26,
                 varietal:"Cabernet Sauvignon",
                 country:"Australia",
                 region:"South Australia",
@@ -267,7 +241,6 @@ return knex('regions').del()
             },
             {
                 id: 27,
-                varietalId: 27,
                 varietal:"Cabernet Sauvignon",
                 country:"Chile",
                 region:"Central Valley",
@@ -277,7 +250,6 @@ return knex('regions').del()
             },
             {
                 id: 28,
-                varietalId: 28,
                 varietal:"Cabernet Sauvignon",
                 country:"Australia",
                 region:"Western Australia",
@@ -287,7 +259,6 @@ return knex('regions').del()
             },
             {
                 id: 29,
-                varietalId: 29,
                 varietal:"Cabernet Sauvignon",
                 country:"Australia",
                 region:"South Australia",
@@ -297,7 +268,6 @@ return knex('regions').del()
             },
             {
                 id: 30,
-                varietalId: 30,
                 varietal:"Cabernet Sauvignon",
                 country:"France",
                 region:"Bordeaux",
@@ -307,7 +277,6 @@ return knex('regions').del()
             },
             {
                 id: 31,
-                varietalId: 31,
                 varietal:"Grenache",
                 country:"Australia",
                 region:"South Australia",
@@ -317,7 +286,6 @@ return knex('regions').del()
             },
             {
                 id: 32,
-                varietalId: 32,
                 varietal:"Grenache",
                 country:"France",
                 region:"Rhone Valley",
@@ -326,8 +294,7 @@ return knex('regions').del()
                 long: 4.825413
             },
             {
-                id: 33,
-                varietalId: 33, 
+                id: 33, 
                 varietal:"Merlot",
                 country:"France",
                 region:"Bordeaux",
@@ -337,7 +304,6 @@ return knex('regions').del()
             },
             {
                 id: 34,
-                varietalId: 34,
                 varietal:"Merlot",
                 country:"United States",
                 region:"California",
@@ -347,7 +313,6 @@ return knex('regions').del()
             },
             {
                 id: 35,
-                varietalId: 35,
                 varietal:"Syrah",
                 country:"France",
                 region:"Rhone Valley",
@@ -357,7 +322,6 @@ return knex('regions').del()
             },
             {
                 id: 36,
-                varietalId: 36,
                 varietal:"Syrah",
                 country:"Australia",
                 region:"South Australia",
@@ -367,7 +331,6 @@ return knex('regions').del()
             },
             {
                 id: 37,
-                varietalId: 37,
                 varietal:"Syrah",
                 country:"Australia",
                 region:"Western Australia",
@@ -377,7 +340,6 @@ return knex('regions').del()
             },
             {
                 id: 38,
-                varietalId: 38,
                 varietal:"Syrah",
                 country:"Australia",
                 region:"Victoria",
@@ -387,7 +349,6 @@ return knex('regions').del()
             },
             {
                 id: 39,
-                varietalId: 39,
                 varietal:"Syrah",
                 country:"United States",
                 region:"California",
@@ -397,7 +358,6 @@ return knex('regions').del()
             },
             {
                 id: 40,
-                varietalId: 40,
                 varietal:"Nebbiolo",
                 country:"Italy",
                 region:"Peidmont",
@@ -407,7 +367,6 @@ return knex('regions').del()
             },
             {
                 id: 41,
-                varietalId: 41,
                 varietal:"Pinot Noir",
                 country:"New Zealand",
                 region:"North Island",
@@ -417,7 +376,6 @@ return knex('regions').del()
             },
             {
                 id: 42,
-                varietalId: 42,
                 varietal:"Pinot Noir",
                 country:"New Zealand",
                 region:"South Island",
@@ -427,7 +385,6 @@ return knex('regions').del()
             },
             {
                 id: 43,
-                varietalId: 43,
                 varietal:"Pinot Noir",
                 country:"United States",
                 region:"California",
@@ -437,7 +394,6 @@ return knex('regions').del()
             },
             {
                 id: 44,
-                varietalId: 44,
                 varietal:"Pinot Noir",
                 country:"France",
                 region:"Burgundy",
@@ -447,7 +403,6 @@ return knex('regions').del()
             },
             {
                 id: 45,
-                varietalId: 45,
                 varietal:"Malbec",
                 country:"Argentina",
                 region:"Mendoza",
@@ -457,7 +412,6 @@ return knex('regions').del()
             },
             {
                 id: 46,
-                varietalId: 46,
                 varietal:"Sangiovese",
                 country:"Italy",
                 region:"Tuscany",
@@ -467,7 +421,6 @@ return knex('regions').del()
             },
             {
                 id: 47,
-                varietalId: 47,
                 varietal:"Zinfandel",
                 country:"United States",
                 region:"California",
@@ -477,7 +430,6 @@ return knex('regions').del()
             },
             {
                 id: 48,
-                varietalId: 48,
                 varietal:"tempranillo",
                 country:"Spain",
                 region:"Rioja",
@@ -487,7 +439,6 @@ return knex('regions').del()
             },
             {
                 id: 49,
-                varietalId: 49,
                 varietal:"Tempranillo",
                 country:"Spain",
                 region:"Ribera del Duero",
